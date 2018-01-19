@@ -1,0 +1,318 @@
+body {
+	background-color: #02010a;
+	font-family: 'Dancing Script', cursive;
+}
+a {
+	color: #000;
+}
+
+.contenido {
+	width: 900px;
+	max-width:  100%;
+	margin:  0 auto;
+	
+	}
+#principal {
+  -moz-animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -moz-animation-name: principal;
+  -webkit-animation-name: principal;
+  animation-name: principal;
+  
+}
+@keyframes principal {
+  0% {
+    margin-top:150%;
+   
+  }
+      
+  60% {
+    margin-top:-5%;
+   
+  }
+	100% {
+		margin-top: 0%;
+	}
+}
+
+.cabecera
+{
+	background-color: #5b7989;
+	color: #fff;	
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding: 10px 10px 10px 20px;
+	
+	margin-top: 0;
+	overflow:hidden
+}
+.cabecera a
+{
+	color: #fff;
+}
+
+.tituloprincipal
+{
+-webkit-text-shadow: 2px 2px 2px #000;
+-moz-text-shadow: 2px 2px 2px #000;
+text-shadow: 2px 2px 2px #000;
+width: 50%;
+float: left;
+
+	
+}
+.menu
+{
+	float: right;
+	padding: 30px 20px 20px 20px;
+	font-size:  24px;
+	font-weight: bold;
+	
+}
+.menu a {
+	text-decoration: underline;
+}
+.menu a:hover {
+	color: #000;
+}
+.imgprincipal
+{
+	padding: 20px 0 20px 0;
+	background-color: #82c3a6;
+	
+}
+.imgprincipal img
+{
+	margin: 0 auto;
+	width: 100%;-webkit-box-shadow: 2px 2px 2px  #000;
+-moz-box-shadow: 2px 2px 2px #000;
+box-shadow: 2px 2px 2px #000;
+}
+
+
+.contenedorcentral
+{
+	display: -webkit-flex;
+	display: flex;	
+	background-color: #d5c75f;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	
+}
+.imagen1, .imagen2
+{
+	text-align: center;
+	font-size: 22px;
+	
+}
+.imagen1 img, .imagen2 img
+{
+-webkit-box-shadow: 2px 2px 2px  #000;
+-moz-box-shadow: 2px 2px 2px #000;
+box-shadow: 2px 2px 2px #000;
+}
+
+.imagen1 img:hover
+{
+transition-duration: 2s;
+-webkit-transform: rotate(10deg);
+transform: rotate(10deg);
+-webkit-box-shadow: 2px 2px 2px 2px  #82c3a6;
+box-shadow: 2px 2px 2px 2px #82c3a6;
+	
+}
+.imagen2 img:hover
+{
+transition-duration: 2s;
+transform: translate(5px, -20px);
+-webkit-box-shadow: 2px 2px 2px 2px  #82c3a6;
+box-shadow: 2px 2px 2px 2px #82c3a6;
+	
+}
+.pie
+{
+	display: -webkit-flex;
+	display: flex;	
+	
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	
+	color: #000;
+	background-color: #c6d5c5;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	
+	margin-top: 0;
+}
+.pie .columna1
+{
+	width: 20%;
+	padding: 10px;
+}
+.pie .columna2
+{
+	
+	width: 20%;
+	padding: 10px;
+}
+.pie .columna3
+{
+	width: 30%;
+	padding: 10px;
+}
+.pie .columna4
+{
+	width: 20%;
+	padding: 10px;
+}
+.pie h3
+{
+	
+	font-size: 34px;
+}
+.pie .columna1 .datos {
+	padding: 5px;
+	font-weight: bold;
+}
+
+#galeria {
+	display: flex;
+	flex-direction: column;
+	
+}
+.contenedorimagenes
+{
+	display: flex;
+	flex-flow: row wrap;
+
+	
+}
+.blur
+{ 	filter: blur(10px);
+	-webkit-filter: blur(10px);
+   
+}
+.gris
+{
+	 filter:grayscale(100%);
+}
+.sepia
+{
+	 filter:sepia(90%);
+}
+
+@media(max-width:900px)
+{
+	.tituloprincipal
+	{
+		width: 100%;
+		float: none;
+		margin: 0 auto!important;
+	}
+	.cabecera{
+		text-align: center;
+	}
+	.menu {
+		width: 100%;
+		float: none;
+		margin: 0 auto!important;
+		padding: 0;
+	}
+	.imagen1 {
+	width: 100%;
+	
+}
+	.imagen2 {
+	width: 100%;
+
+}
+	.imagen3 {
+	
+	width: 100%;
+
+}
+
+	.pie .columna1{
+	width: 25%;
+	}
+
+.contenedorcentral .imagen1 img, .contenedorcentral .imagen2 img, .contenedorimagenes .imagen3 img
+{
+
+	width: 100%;
+	border:  1px solid black;
+	
+}
+	.pie .columna1
+{
+	width: 100%;
+	
+}
+.pie .columna2
+{
+	
+	width: 100%;
+	
+}
+.pie .columna3
+{
+	width: 100%;
+	
+}
+.pie .columna4
+{
+	width: 100%;
+
+}
+.pie {
+		width: 100%;
+	}
+}
+@media(min-width:900px)
+{
+	
+	
+	.imagen1 {
+	width: 50%;
+	
+}
+.imagen2 {
+	width: 50%;
+
+}
+.imagen3 {
+width: 33%;
+
+}
+
+.contenedorcentral {
+		width: 100%;
+	}
+.contenedorcentral .imagen1 img, .contenedorcentral .imagen2 img
+{
+	
+	width: 100%;
+	border:  1px solid black;
+	
+}
+
+.contenedorimagenes .imagen3 img
+{
+	
+	width: 100%;
+	border:  1px solid black;
+	
+}	
+	
+	
+}
+#galeria
+{
+	background-color: #d5c75f;
+}
+
+#galeria h2
+{
+	margin: 20px 0 20px 20px !important;
+}
